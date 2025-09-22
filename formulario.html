@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Ubuntu:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS do formulário -->
+  <style>
+    body {
+      background-color: #464545;
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #rd-text-jsc3edkn {
+      display: block;
+      margin-top: 60px;
+      text-align: center;
+      width: 100%;
+    }
+
+    #rd-text-jsc3edkn strong {
+      font-size: 32px;
+      color: #fff;
+    }
+
+    #rd-text-li0pmbaj {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+
+    #rd-text-li0pmbaj span {
+      color: #fff;
+    }
+
+    #rd-form-joq3m2m5 {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      max-width: 911px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    /* Campos do formulário */
+    #rd-form-joq3m2m5 .bricks-form__field {
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #rd-form-joq3m2m5 .bricks-form__label {
+      color: #fff;
+      font-size: 15px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    #rd-form-joq3m2m5 .bricks-form__input {
+      color: #000;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      height: 45px;
+      padding: 0 15px;
+      box-shadow: inset 0px 2px 3px #ddd;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 5px 0;
+    }
+
+    #rd-form-joq3m2m5 select.bricks-form__input {
+      height: 45px;
+    }
+
+    #rd-button-joq3m2m7 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #36b451;
+      color: #fff;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 19px;
+      height: 60px;
+      border-radius: 30px;
+      border: none;
+      max-width: 296px;
+      width: 100%;
+      cursor: pointer;
+      margin: 15px auto 0;
+    }
+
+    #rd-form-joq3m2m5 .bricks-form__privacy,
+    #rd-form-joq3m2m5 .bricks-form__terms {
+      color: #fff;
+      font-size: 13px;
+    }
+
+    label.error {
+      color: #DC3543;
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    @media screen and (max-width: 768px) {
+      #rd-form-joq3m2m5 {
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Título -->
+  <div id="rd-text-jsc3edkn">
+    <strong>Olá,</strong>
+  </div>
+
+  <div id="rd-text-li0pmbaj">
+    <span>Para receber seu material preencha o formulário abaixo</span>
+  </div>
+
+  <!-- Formulário -->
+  <div id="rd-form-joq3m2m5">
+    <form id="conversion-form" novalidate>
+      <div class="bricks-form__field">
+        <label for="name">Nome Completo*</label>
+        <input id="name" class="bricks-form__input" name="name" type="text" placeholder="Nome *">
+      </div>
+
+      <div class="bricks-form__field">
+        <label for="email">Email*</label>
+        <input id="email" class="bricks-form__input" name="email" type="email" placeholder="Email *">
+      </div>
+
+      <div class="bricks-form__field">
+        <label for="mobile_phone">Celular*</label>
+        <input id="mobile_phone" class="bricks-form__input" name="mobile_phone" type="tel" placeholder="Celular *">
+      </div>
+
+      <div class="bricks-form__field">
+        <label for="cidade">Cidade/Estado*</label>
+        <input id="cidade" class="bricks-form__input" name="cidade" type="text" placeholder="Cidade-Estado *">
+      </div>
+
+      <div class="bricks-form__field">
+        <label for="negocio">Nome do seu Negócio (opcional)</label>
+        <input id="negocio" class="bricks-form__input" name="negocio" type="text" placeholder="Se tiver, coloque aqui...">
+      </div>
+
+      <div class="bricks-form__field">
+        <label for="pretensao">Qual pretensão:*</label>
+        <select id="pretensao" name="pretensao" class="bricks-form__input">
+          <option value="">Selecione</option>
+          <option value="Especificar em projetos">Especificar em projetos</option>
+          <option value="Revender">Revender</option>
+          <option value="Empreendimento">Empreendimento (construtoras)</option>
+          <option value="Minha casa">Minha casa</option>
+        </select>
+      </div>
+
+      <div class="bricks-form__field">
+        <label for="segmento">Qual o segmento você atua?*</label>
+        <select id="segmento" name="segmento" class="bricks-form__input">
+          <option value="">Selecione</option>
+          <option value="Arquiteto">Arquiteto</option>
+          <option value="Paisagista">Paisagista</option>
+          <option value="Designer de Interiores">Designer de Interiores</option>
+          <option value="Decorador">Decorador</option>
+          <option value="Construtora">Construtora</option>
+          <option value="Lojista">Lojista</option>
+          <option value="Jardinagem">Jardinagem</option>
+          <option value="Estudante da Área">Estudante da Área</option>
+          <option value="Consumo próprio">Nenhum destes, é para consumo próprio</option>
+        </select>
+      </div>
+
+      <div class="bricks-form__field bricks-form__privacy">
+        <label>
+          <input type="checkbox" name="consent"> Eu aceito receber comunicados e conteúdos. (opcional)
+        </label>
+      </div>
+
+      <button type="submit" id="rd-button-joq3m2m7">Quero Meu Material</button>
+    </form>
+  </div>
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://d335luupugsy2.cloudfront.net/js/jquery.validate/1.9/jquery.validate.min.js"></script>
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+      emailjs.init("OzybONfW58vkOnYj7"); // Sua Public Key
+  </script>
+
+ <!-- jQuery Mask Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  // Máscara para celular
+  $('#mobile_phone').mask('(00) 00000-0000');
+
+  // Validação e envio
+  $("#conversion-form").validate({
+    rules: {
+      name: { required: true, minlength: 3 },
+      email: { required: true, email: true },
+      mobile_phone: { required: true, minlength: 14 }, // considerando a máscara
+      cidade: { required: true },
+      pretensao: { required: true },
+      segmento: { required: true }
+    },
+    messages: {
+      name: "Informe seu nome completo",
+      email: "Digite um e-mail válido",
+      mobile_phone: "Informe um celular válido",
+      cidade: "Digite sua cidade",
+      pretensao: "Selecione uma opção",
+      segmento: "Selecione seu segmento"
+    },
+    errorElement: "label",
+    errorClass: "error",
+
+    submitHandler: function(form) {
+      const formData = {
+        name: $("#name").val(),
+        email: $("#email").val(),
+        mobile_phone: $("#mobile_phone").val(),
+        cidade: $("#cidade").val(),
+        negocio: $("#negocio").val(),
+        pretensao: $("#pretensao").val(),
+        segmento: $("#segmento").val(),
+        consent: $("input[name='consent']").is(":checked") ? "Sim" : "Não"
+      };
+
+      console.log("📩 Dados do formulário:", formData);
+
+      emailjs.send("service_68r0le7", "template_1wgn6db", formData)
+        .then(function(response) {
+          alert("Formulário enviado com sucesso!\nVocê vai receber em seu e-mail o material.");
+          console.log("✅ Email enviado:", response);
+          form.reset();
+        }, function(error) {
+          alert("❌ Erro ao enviar. Tente novamente.");
+          console.error("Erro:", error);
+        });
+    }
+  });
+});
+</script>
+
+
+</body>
+</html>
